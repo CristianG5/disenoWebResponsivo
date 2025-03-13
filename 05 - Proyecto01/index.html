@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Formulario de Encuesta</title>
+</head>
+<body>
+  <h1 id="title">Formulario de encuesta</h1>
+  <p id="description">Aqui va la descripcion del formulario de encuesta</p>
+ 
+  <form id="survey-form">
+
+    <fieldset>
+    <label id="name-label">Nombre <input id="name" type="text" name="name" required placeholder="Ingresa tu nombre complero"/></label>
+
+    <label id="email-label">Email <input id="email" type="email" name="email"  required placeholder="Tu correo electronico"/>
+    </label>
+
+    <label id="number-label">
+      Edad <input id="number" type="number" min=12 max=90 Placeholder="Ingresa tu numero entre 12 y 90 " name="age" placeholder="Tu edad" value="age"/>
+    </label>
+    </fieldset>
+
+    <fieldset>
+    <legend>Selecciona tu preferencia</legend><label>
+      <select id="dropdown" name="preference">        <option  value="">Elige una opcion</option>
+        <option value="amd">AMD</option>
+        <option value="intel">Intel</option>      
+      </select>
+    </label>
+    </fieldset>
+      
+    <fieldset>
+      <legend>Selecciona</legend>
+      <label>Boton 1
+        <input type="radio" name="seleccion" value="boton1" />
+      </label>
+      <label>Boton 2 
+        <input id type="radio" name="seleccion" value="boton2"/>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Selecciona 1 o mas</legend>
+      <input type="checkbox" value="option1"/>
+      <label />Opcion 1
+      <input type="checkbox" value="option2"/>
+      <label />Opcion 2
+      <input type="checkbox" value="option3"/>
+      <label />Opcion 3
+      <input type="checkbox" value="option4"/>
+      <label />Opcion 4
+    </fieldset>
+    
+    <fieldset>
+      <legend>Descripcion</legend>
+      <label> <textarea name="description"></textarea></label>     
+    </fieldset>
+
+    <button id="submit" type="submit">Submit</button>
+
+  </form>
+</body>
+</html>
